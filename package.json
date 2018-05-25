@@ -1,0 +1,29 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "",
+  "main": "helloworld.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JingPSE/helloworld.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JingPSE/helloworld/issues"
+  },
+  "homepage": "https://github.com/JingPSE/helloworld#readme",
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "zombie": "^6.1.2"
+  }
+}
+
+
