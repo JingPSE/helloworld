@@ -5,7 +5,7 @@ node {
         checkout scm
 
    stage 'Setup'
-        sh 'npm install'
+        sh '/home/ec2-user/.nvm/versions/node/v6.11.5/bin/npm install'
 
    stage 'Mocha test'
         sh './node_modules/mocha/bin/mocha'
