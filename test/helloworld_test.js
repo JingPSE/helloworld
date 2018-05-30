@@ -10,6 +10,10 @@ describe('main page', function() {
   before(function(done) {
     this.browser.visit('/', done)
   })
+  after(function (done) {
+        server.close();
+        done();
+   })
   it('should say hello world', function() { 
     assert.ok(this.browser.success)
     assert.equal(this.browser.text(), "Hello World")
