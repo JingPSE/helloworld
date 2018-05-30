@@ -1,6 +1,7 @@
 var Browser = require('zombie')
 var assert = require('assert')
 var app = require('../helloworld')
+var server = app.listen();
 
 
 describe('main page', function() { 
