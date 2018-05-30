@@ -1,6 +1,6 @@
 var http = require("http")
 
-var app = http.createServer(function (request, response) {
+http.createServer(function (request, response) {
 
    // Send the HTTP header
    // HTTP Status: 200 : OK
@@ -9,15 +9,7 @@ var app = http.createServer(function (request, response) {
 
    // Send the response body as "Hello World"
    response.end('Hello World\n')
-})
-var server= app.listen(3000)
+}).listen(3000)
 
 // Console will print the message
 console.log('Server running')
-
-module.exports = {
-    server : server,
-    app : app
-}
-
-
