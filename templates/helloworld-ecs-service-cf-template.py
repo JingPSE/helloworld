@@ -79,7 +79,7 @@ t.add_resource(ecs.Service(
     Cluster=ImportValue(
         Join(
             "-",
-            [Select(0, Split("-", Ref("AWS::StackName"))),
+            [Select(2, Split("-", Ref("AWS::StackName"))),
                 "cluster-id"]
         )
     ),
